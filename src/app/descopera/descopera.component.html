@@ -1,0 +1,74 @@
+<div class="container">
+    <h2 class="text-center">Descopera toate functionalitatile aplicatiei noastre</h2>
+    @if (images) {
+        <ngb-carousel class="descopera-container center">
+            @for(image of images; track image){
+                <ng-template ngbSlide>
+                    <div>
+                        <img [src]="image.url" width="250px" height="470px" />
+                    </div>
+                    <div class="carousel-caption">
+                    </div>
+                </ng-template>
+            }
+        </ngb-carousel>
+    }
+    <h2 class="card-title">Ce pasi trebuie sa urmezi pentru a folosi aplicatia noastra?</h2>
+    <div class="flex-row">
+        <mat-card class="card">
+            <mat-card-content>
+                <div class="flex-row">
+                    <img src="/assets/images/descopera/card/creare_cont.png" width="100" height="100">
+                    <p>Creaza-ti un cont</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="card">
+            <mat-card-content>
+                <div class="flex-row">
+                    <img src="/assets/images/descopera/card/login.png" width="100" height="100">
+                    <p>Intra in cont</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <h2 class="card-title">Ce poti gasi in aplicatia noastra?</h2>
+    <div class="flex-row">
+        <mat-card class="card">
+            <mat-card-content>
+                <div class="flex-row">
+                    <img class="center-image" src="/assets/images/descopera/card/evenimente.png" width="100" height="100">
+                    <p>Evenimente</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="card">
+            <mat-card-content>
+                <div class="flex-row">
+                    <img src="/assets/images/descopera/card/personalitati.png" width="100" height="100">
+                    <p>Personalitati</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class=card-title>
+        <div class="flex-row">
+            <mat-card class="card">
+                <mat-card-content>
+                    <div class="flex-row">
+                        <img class="center-image" src="/assets/images/descopera/card/profil.png" width="100" height="100">
+                        <p>Propriul profil</p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+            <mat-card class="card">
+                <mat-card-content>
+                    <div class="flex-row">
+                        <img src="/assets/images/descopera/card/personalitati_favorite.png" width="100" height="100">
+                        <p>Personalitati favorite</p>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

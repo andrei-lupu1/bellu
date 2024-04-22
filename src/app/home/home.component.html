@@ -1,0 +1,27 @@
+<div class="home-custom">
+	<div class="container">
+		<div class="title text-center">
+			<h2 >Prin Bellu, dar nu ramanem acolo</h2>
+			<button mat-button routerLink="/descopera">Descopera aplicatia</button>
+		</div>	
+		@if (images) {
+			<ngb-carousel class="home-container">
+				@for(image of images; track image){
+					<ng-template ngbSlide>
+						<div>
+							<img [src]="image.url" width="1100px" height="600px" />
+						</div>
+						<div class="carousel-caption">
+						</div>
+					</ng-template>
+				}
+			</ngb-carousel>
+		}	
+		<div class="text-center">
+			<p style="color: red">Primii 500 de utilizatori primesc o participare gratis la orice eveniment.</p>
+			<img src="/assets/images/QR.png">
+			<span class="spacer"></span>
+			<p>Descarca acum aplicatia noastra din AppStore sau Google Play!</p>
+		</div>
+	</div>
+</div>

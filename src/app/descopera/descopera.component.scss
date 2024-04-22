@@ -1,0 +1,38 @@
+.descopera-container{
+    margin-top: 10px;
+    text-align: center;
+    width: 250px;
+    height: 470px;
+}
+.text-center{
+    text-align: center;
+}
+.center{
+    margin-left:40%;
+}
+
+p, h2{
+    font-family:"Trirong", serif !important;
+    font-weight: bold;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    line-height: 100px;
+}
+
+.card{
+    height:120px;
+    margin-right:5px;
+    width:700px;
+}
+
+.card-title{
+    margin-top:30px;
+}
+
+.center-image{
+    justify-content: center;
+}
